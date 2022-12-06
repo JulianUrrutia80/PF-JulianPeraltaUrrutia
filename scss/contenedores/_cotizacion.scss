@@ -1,0 +1,29 @@
+.pag-cotizador {
+	table {
+		width: 100%;
+		text-align: left; 
+		display: flex; 
+		margin: auto; 
+		padding: 4rem; 
+		border-collapse: separate; 
+		img {
+			width: 90%; 
+			box-shadow: 1px 1px 5px black;
+        } 
+		h2 { 
+			font-size: 1.2rem; 
+			font-weight: bold; 
+			padding: 0.8rem; 
+			&:hover {
+				color: rgba(245, 162, 8, 0.925);
+            }
+        }
+		p {
+			text-transform: uppercase;
+			padding-left: 1rem; 
+			font-size: 0.8rem; 
+			padding-bottom: 1rem; 
+			color: rgb(110, 109, 109);
+        }
+    }
+}

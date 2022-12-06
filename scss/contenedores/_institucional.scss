@@ -1,0 +1,21 @@
+.pag-institucional{ 
+	h2 {
+		padding: 2rem; 
+		text-shadow: 0.5px 0.5px 1px black;
+		padding-left: 4rem;
+    }
+	.info-insti{ 
+		padding: 2rem; 
+		display: inline-flex; 
+		background-color: $color-texto; 
+		border-bottom: none;
+		gap: 5rem;
+		text-align: justify; 
+		justify-content: center;
+    }
+	section { 
+		img {
+			width: 30%; 
+        }
+    }
+}

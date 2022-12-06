@@ -1,0 +1,43 @@
+.pag-contacto {
+	.central {
+		padding: 2rem;
+		justify-content: space-around; 
+		display: grid; 
+		grid-template-columns: auto; 
+		grid-template-rows: auto; 
+		grid-template-areas: "central maps"
+    "txt-ubi maps"
+    "txt-contacto maps"; 
+		.info {
+			grid-area: central; 
+			img {
+				width: 7%; 
+				margin-right: 1rem;
+            } 
+			.telefono { 
+				margin-right: 2rem; 
+				width: 5%;
+            }
+        } 
+		iframe { 
+			grid-area: maps;
+        } 
+		h2 { 
+			margin-bottom: 2rem;
+        }
+    }
+
+	.formulario {
+		h2 {
+			text-align: center;
+			margin: 2rem;
+        } 
+		form { 
+			margin: 2rem;
+        }
+    }
+}
+
+.pag-contacto .central h3, .pag-contacto .central .info img {
+	display: inline-flex;
+}

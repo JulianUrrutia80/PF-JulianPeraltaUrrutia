@@ -1,0 +1,45 @@
+.pag-siniestros {
+	color: white;
+	background-color: $color-fondo;
+	height: 78vh;
+	text-align: center; 
+	justify-content: center; 
+	display: grid; 
+	grid-template-columns: auto; 
+	grid-template-rows: auto;
+	grid-template-areas: "h1 h1"
+    "asegurado tercero"; 
+	h1 {
+		grid-area: h1;
+    } 
+
+	.asegurado {
+		grid-area: asegurado;
+		.botones-aseg {
+			display: inline-flex;
+			justify-content: center;
+        }
+    } 
+
+	.tercero {
+		grid-area: tercero;
+		.botones-tercero {
+			display: inline-flex; 
+			justify-content: center;
+        }
+    }
+
+	div {
+		img { 
+			width: 40%;
+        }
+		h2 { 
+			margin: 2rem;
+        } 
+		div { 
+			h3 { 
+				margin: 1rem;
+            }
+        }
+    }
+}
