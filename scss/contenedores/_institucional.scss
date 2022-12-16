@@ -1,8 +1,12 @@
 .pag-institucional{ 
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
 	h2 {
 		padding: 2rem; 
 		text-shadow: 0.5px 0.5px 1px black;
 		padding-left: 4rem;
+		height: 10vh;
     }
 	.info-insti{ 
 		padding: 2rem; 
@@ -12,10 +16,12 @@
 		gap: 5rem;
 		text-align: justify; 
 		justify-content: center;
-    }
+		height: 30vh;
+	}
 	section { 
+		height: 30vh;
 		img {
-			width: 30%; 
+			width: 35%; 
         }
     }
 }

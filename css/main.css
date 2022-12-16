@@ -56,29 +56,35 @@
     padding-bottom: 1rem;
     color: #6e6d6d; }
 
-.pag-institucional h2 {
-  padding: 2rem;
-  text-shadow: 0.5px 0.5px 1px black;
-  padding-left: 4rem; }
-
-.pag-institucional .info-insti {
-  padding: 2rem;
-  display: inline-flex;
-  background-color: white;
-  border-bottom: none;
-  gap: 5rem;
-  text-align: justify;
-  justify-content: center; }
-
-.pag-institucional section img {
-  width: 30%; }
+.pag-institucional {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; }
+  .pag-institucional h2 {
+    padding: 2rem;
+    text-shadow: 0.5px 0.5px 1px black;
+    padding-left: 4rem;
+    height: 10vh; }
+  .pag-institucional .info-insti {
+    padding: 2rem;
+    display: inline-flex;
+    background-color: white;
+    border-bottom: none;
+    gap: 5rem;
+    text-align: justify;
+    justify-content: center;
+    height: 30vh; }
+  .pag-institucional section {
+    height: 30vh; }
+    .pag-institucional section img {
+      width: 35%; }
 
 .pag-siniestros {
   color: white;
   background-color: #007d6f;
-  height: 78vh;
   text-align: center;
   justify-content: center;
+  height: 81.5vh;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
