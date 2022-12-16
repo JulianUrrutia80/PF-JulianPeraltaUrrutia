@@ -176,6 +176,17 @@ footer {
 	text-decoration: 1.5px underline black;
 }
 
+.pag-contacto{
+	.central{
+		.telefono{
+			&:hover{
+				rotate: 60deg;
+				transform: scale(120%);
+			}
+		}
+	}
+}
+
 
 
 

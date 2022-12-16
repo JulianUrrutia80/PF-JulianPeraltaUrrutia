@@ -3,6 +3,105 @@
   padding: 0;
   box-sizing: border-box; }
 
+.pag-contacto .central {
+  padding: 2rem;
+  justify-content: space-around;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas: "central maps" "txt-ubi maps" "txt-contacto maps"; }
+  .pag-contacto .central .info {
+    grid-area: central; }
+    .pag-contacto .central .info img {
+      width: 7%;
+      margin-right: 1rem; }
+    .pag-contacto .central .info .telefono {
+      margin-right: 2rem;
+      width: 5%; }
+  .pag-contacto .central iframe {
+    grid-area: maps; }
+  .pag-contacto .central h2 {
+    margin-bottom: 2rem; }
+
+.pag-contacto .formulario h2 {
+  text-align: center;
+  margin: 2rem; }
+
+.pag-contacto .formulario form {
+  margin: 2rem; }
+
+.pag-contacto .central h3, .pag-contacto .central .info img {
+  display: inline-flex; }
+
+.pag-cotizador table {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  margin: auto;
+  padding: 4rem;
+  border-collapse: separate; }
+  .pag-cotizador table img {
+    width: 90%;
+    box-shadow: 1px 1px 5px black; }
+  .pag-cotizador table h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.8rem; }
+    .pag-cotizador table h2:hover {
+      color: rgba(245, 162, 8, 0.925); }
+  .pag-cotizador table p {
+    text-transform: uppercase;
+    padding-left: 1rem;
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
+    color: #6e6d6d; }
+
+.pag-institucional h2 {
+  padding: 2rem;
+  text-shadow: 0.5px 0.5px 1px black;
+  padding-left: 4rem; }
+
+.pag-institucional .info-insti {
+  padding: 2rem;
+  display: inline-flex;
+  background-color: white;
+  border-bottom: none;
+  gap: 5rem;
+  text-align: justify;
+  justify-content: center; }
+
+.pag-institucional section img {
+  width: 30%; }
+
+.pag-siniestros {
+  color: white;
+  background-color: #007d6f;
+  height: 78vh;
+  text-align: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas: "h1 h1" "asegurado tercero"; }
+  .pag-siniestros h1 {
+    grid-area: h1; }
+  .pag-siniestros .asegurado {
+    grid-area: asegurado; }
+    .pag-siniestros .asegurado .botones-aseg {
+      display: inline-flex;
+      justify-content: center; }
+  .pag-siniestros .tercero {
+    grid-area: tercero; }
+    .pag-siniestros .tercero .botones-tercero {
+      display: inline-flex;
+      justify-content: center; }
+  .pag-siniestros div img {
+    width: 40%; }
+  .pag-siniestros div h2 {
+    margin: 2rem; }
+  .pag-siniestros div div h3 {
+    margin: 1rem; }
+
 .redes {
   display: flex;
   justify-items: center;
@@ -102,7 +201,7 @@ main .capa-uno .botones h2, .pag-siniestros .asegurado .botones-aseg h3, .pag-si
   border-radius: 2rem;
   border-color: white;
   padding: 1rem;
-  background-color: #096d61d0;
+  background-color: #016055;
   box-shadow: 1px 1px 5px white; }
 
 main .capa-uno .botones .ver-ubi:hover, main .capa-uno .botones .cotiza:hover, .pag-siniestros .tercero .botones-tercero .req-tercero:hover, .pag-siniestros .tercero .botones-tercero .ingreso-tercero:hover, .pag-siniestros .asegurado .botones-aseg .req-aseg:hover, .pag-siniestros .asegurado .botones-aseg .ingreso-aseg:hover {
@@ -140,101 +239,6 @@ footer {
   text-shadow: 1px 1px 3px black;
   text-decoration: 1.5px underline black; }
 
-.pag-cotizador table {
-  width: 100%;
-  text-align: left;
-  display: flex;
-  margin: auto;
-  padding: 4rem;
-  border-collapse: separate; }
-  .pag-cotizador table img {
-    width: 90%;
-    box-shadow: 1px 1px 5px black; }
-  .pag-cotizador table h2 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding: 0.8rem; }
-    .pag-cotizador table h2:hover {
-      color: rgba(245, 162, 8, 0.925); }
-  .pag-cotizador table p {
-    text-transform: uppercase;
-    padding-left: 1rem;
-    font-size: 0.8rem;
-    padding-bottom: 1rem;
-    color: #6e6d6d; }
-
-.pag-siniestros {
-  color: white;
-  background-color: #007d6f;
-  height: 78vh;
-  text-align: center;
-  justify-content: center;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  grid-template-areas: "h1 h1" "asegurado tercero"; }
-  .pag-siniestros h1 {
-    grid-area: h1; }
-  .pag-siniestros .asegurado {
-    grid-area: asegurado; }
-    .pag-siniestros .asegurado .botones-aseg {
-      display: inline-flex;
-      justify-content: center; }
-  .pag-siniestros .tercero {
-    grid-area: tercero; }
-    .pag-siniestros .tercero .botones-tercero {
-      display: inline-flex;
-      justify-content: center; }
-  .pag-siniestros div img {
-    width: 40%; }
-  .pag-siniestros div h2 {
-    margin: 2rem; }
-  .pag-siniestros div div h3 {
-    margin: 1rem; }
-
-.pag-contacto .central {
-  padding: 2rem;
-  justify-content: space-around;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  grid-template-areas: "central maps" "txt-ubi maps" "txt-contacto maps"; }
-  .pag-contacto .central .info {
-    grid-area: central; }
-    .pag-contacto .central .info img {
-      width: 7%;
-      margin-right: 1rem; }
-    .pag-contacto .central .info .telefono {
-      margin-right: 2rem;
-      width: 5%; }
-  .pag-contacto .central iframe {
-    grid-area: maps; }
-  .pag-contacto .central h2 {
-    margin-bottom: 2rem; }
-
-.pag-contacto .formulario h2 {
-  text-align: center;
-  margin: 2rem; }
-
-.pag-contacto .formulario form {
-  margin: 2rem; }
-
-.pag-contacto .central h3, .pag-contacto .central .info img {
-  display: inline-flex; }
-
-.pag-institucional h2 {
-  padding: 2rem;
-  text-shadow: 0.5px 0.5px 1px black;
-  padding-left: 4rem; }
-
-.pag-institucional .info-insti {
-  padding: 2rem;
-  display: inline-flex;
-  background-color: white;
-  border-bottom: none;
-  gap: 5rem;
-  text-align: justify;
-  justify-content: center; }
-
-.pag-institucional section img {
-  width: 30%; }
+.pag-contacto .central .telefono:hover {
+  rotate: 60deg;
+  transform: scale(120%); }
