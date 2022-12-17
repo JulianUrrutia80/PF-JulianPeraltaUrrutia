@@ -10,12 +10,11 @@
     }
 	.info-insti{ 
 		padding: 2rem; 
-		display: inline-flex; 
+		@include grid-style; 
 		background-color: $color-texto; 
 		border-bottom: none;
 		gap: 5rem;
-		text-align: justify; 
-		justify-content: center;
+		text-align: justify;
 		height: 30vh;
 	}
 	section { 

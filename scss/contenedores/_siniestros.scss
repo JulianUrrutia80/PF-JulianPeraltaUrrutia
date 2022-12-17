@@ -4,9 +4,7 @@
 	text-align: center; 
 	justify-content: center;
 	height: 81.5vh;
-	display: grid;
-	grid-template-columns: auto; 
-	grid-template-rows: auto;
+	@include grid;
 	grid-template-areas: "h1 h1"
     "asegurado tercero"; 
 	h1 {
@@ -16,16 +14,14 @@
 	.asegurado {
 		grid-area: asegurado;
 		.botones-aseg {
-			display: inline-flex;
-			justify-content: center;
+			@include grid-style;
         }
     } 
 
 	.tercero {
 		grid-area: tercero;
 		.botones-tercero {
-			display: inline-flex; 
-			justify-content: center;
+			@include grid-style;
         }
     }
 

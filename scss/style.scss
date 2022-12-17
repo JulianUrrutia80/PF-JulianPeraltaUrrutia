@@ -5,6 +5,7 @@
 }
 
 @import "utilidades/variables";
+@import "utilidades/mixins";
 @import "contenedores/contacto";
 @import "contenedores/cotizacion";
 @import "contenedores/institucional";
@@ -22,8 +23,7 @@
         } 
 	div {
 		p {
-			display: inline-flex; 
-			justify-content: center; 
+			@include grid-style;
 			text-align: center;
             } 
         }
@@ -126,18 +126,7 @@ main {
 }
 
 main .capa-uno .botones h2, .pag-siniestros .asegurado .botones-aseg h3, .pag-siniestros .tercero .botones-tercero h3 {
-	font-weight: 400;
-	font-size: 1rem;
-	border-radius: 2rem; 
-	border-color: $color-texto;
-	padding: 1rem; 
-	background-color: $color-contraste;
-	box-shadow: 1px 1px 5px white;
-}
-
-main .capa-uno .botones .ver-ubi:hover, main .capa-uno .botones .cotiza:hover, .pag-siniestros .tercero .botones-tercero .req-tercero:hover, .pag-siniestros .tercero .botones-tercero .ingreso-tercero:hover, .pag-siniestros .asegurado .botones-aseg .req-aseg:hover, .pag-siniestros .asegurado .botones-aseg .ingreso-aseg:hover {
-	transform: scale(0.9);
-	box-shadow: 1px 1px 5px black;
+	@include estilos-botones;
 }
 
 section {

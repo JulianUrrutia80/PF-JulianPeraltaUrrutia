@@ -2,9 +2,7 @@
 	.central {
 		padding: 2rem;
 		justify-content: space-around; 
-		display: grid; 
-		grid-template-columns: auto; 
-		grid-template-rows: auto; 
+		@include grid;
 		grid-template-areas: "central maps"
     "txt-ubi maps"
     "txt-contacto maps"; 
