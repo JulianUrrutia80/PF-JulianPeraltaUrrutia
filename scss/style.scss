@@ -81,7 +81,7 @@ main {
 			padding-left: 5rem;
 			padding-right: 5rem;
 			grid-area: texto;
-			font-size: 0.8rem;
+			font-size: 1rem;
 			padding-top: 3rem;
 			color: #ecececec;
         } 
@@ -176,9 +176,155 @@ footer {
 	}
 }
 
+@media (max-width: 576px){
+	header{
+		display: flex;
+		overflow: scroll;
+		height: 10vh;
+	}
+	footer{
+		height: 5vh;
+	}
 
+	//estilos de index
+	body{
+		height: 100vh;
+		justify-content: center;
+		align-items: center;
+	}
+	.redes{
+		display: none;
+	}
+	main{
+		.capa-uno{
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			height: 60vh;
+			img{
+				display: none;
+			}
+			p{
+				padding: 2rem;
+			}
+		}
+		.capa-dos{
+			display: none;
+		}
+	}
+	section{
+		height: 25vh;
+		table{
+			tr{
+				td{
+					img{
+						display: inline-block;
+						width: 40%;
+					}
+				}
+			}
+		}
+	}
 
+	//estilos de contacto
+	.pag-contacto {
+		@include mq-paginas;
+		.contacto{
+			padding: 1rem;
+			height: 20vh;
+		}
+		.central{
+			height: 35vh;
+			iframe{
+				display: none;
+			}
+		}
+		.formulario{
+			form{
+				height: 15vh;
+				overflow: scroll;
+			}
+		}
+	}
 
+	//estilos de cotizador
+	.pag-cotizador{
+		@include mq-paginas;
+		div{
+			padding: 1rem;
+			height: 20vh;
+		}
+		table{
+			height: 80vh;
+			overflow-x:scroll;
+			padding: 1rem;
+		}
+	}
 
+	//estilos de institucional
 
+	.pag-institucional{
+		@include mq-paginas;
+		div{
+			padding: 1rem;
+			height: 20vh;
+		}
+		.info-insti{
+			display: block;
+			height: 35vh;
+			font-size: 0.6rem;
+		}
+		h2{
+			font-size: 1rem;
+			text-align: right;
 
+		}
+		section{
+			height: 30vh;
+			font-size: 0.8rem;
+			text-justify: distribute-all-lines;
+		}
+	}
+
+	//estilos de siniestros
+
+	.pag-siniestros{
+		@include mq-paginas;
+		h1{
+			display: block;
+			height: 20vh;
+			justify-content: center;
+			font-size: 1.5rem;
+			padding-top: 1rem;
+		}
+		h2{
+			display: block;
+			font-size: 1rem;
+		}
+		.asegurado{
+			display: inline-block;
+			height: 30vh;
+			img{
+				width: 30%;
+			}
+			.botones-aseg{
+				display: none;
+			}
+		}
+		.tercero{
+			display: inline-block;
+			height: 30vh;
+			img{
+				width: 30%;
+			}
+			.botones-tercero{
+				h3{
+					a{
+						display: flex;
+						font-size: 1rem;
+					}
+				}
+			}
+		}
+	}
+}
