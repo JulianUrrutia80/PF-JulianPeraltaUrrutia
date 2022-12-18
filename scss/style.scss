@@ -179,7 +179,7 @@ footer {
 @media (max-width: 576px){
 	header{
 		display: flex;
-		overflow: scroll;
+		overflow-x: scroll;
 		height: 10vh;
 	}
 	footer{
